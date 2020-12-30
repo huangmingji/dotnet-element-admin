@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "huangmingji<ming.j.huang@outlook.com>",
+    "classifications": [ "Web", "WebAPI", "SPA", "Vue", "ElementAdmin" ],
+    "identity": "DotnetElementAdmin",
+    "name": "ASP.NET Core with ElementAdmin",
+    "shortName": "element-admin",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    },
+    "sourceName": "DotnetVue.ElementAdmin",
+    "preferNameDirectory": true
+  }
