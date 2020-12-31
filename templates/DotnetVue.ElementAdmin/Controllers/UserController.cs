@@ -14,11 +14,11 @@ namespace DotnetVue.ElementAdmin.Controllers
     [Route("api/user")]
     public class UserController : Controller
     {
-        private static UserData user = new UserData();
-        private readonly IConfiguration _configuration;
-        public UserController(IConfiguration configuration)
+        private static readonly UserData user = new();
+        private readonly IAccessTokenGenerator _accessTokenGenerator;
+        public UserController(IAccessTokenGenerator accessTokenGenerator)
         {
-            _configuration = configuration;
+            _accessTokenGenerator = accessTokenGenerator;
         }
         
         [HttpGet("")]
@@ -35,12 +35,8 @@ namespace DotnetVue.ElementAdmin.Controllers
             {
                 return new LoginResponseDto(false, "invalid account password.");
             }
-            var securityKey = _configuration.GetSection("Jwt:SecurityKey").Value;
-            var issuer = _configuration.GetSection("Jwt:Issuer").Value;
-            var audience = _configuration.GetSection("Jwt:Audience").Value;
 
-            var token = AccessTokenGenerator.GenerateToken(securityKey, issuer, audience, user.Id.ToString(),
-                DateTime.Now.AddHours(2), user.Permissions);
+            var token = _accessTokenGenerator.GenerateToken(user.Id.ToString(), user.Permissions, DateTime.Now.AddHours(2));
             return new LoginResponseDto(true, "login success.", token);
         }
 

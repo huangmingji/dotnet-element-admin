@@ -63,8 +63,8 @@ export default {
     return {
       systemName: defaultSettings.title,
       loginForm: {
-        userName: '',
-        password: ''
+        userName: 'admin',
+        password: 'password'
       },
       loginRules: {
         userName: [{required: true, trigger: 'blur', validator: validateUsername}],

@@ -53,8 +53,7 @@ namespace DotnetVue.ElementAdmin.Authentication
             IConfiguration configuration = services.BuildServiceProvider().GetService<IConfiguration>();
             services.AddAuthorization(options =>
             {
-                options.AddPolicy("admin", policy => 
-                    policy.Requirements.Add(new PermissionRequirement("admin")));
+                options.AddPolicy("admin", policy => policy.Requirements.Add(new PermissionRequirement("admin")));
             }).AddAuthentication(options =>
             {                    
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -77,6 +76,7 @@ namespace DotnetVue.ElementAdmin.Authentication
                 }
             );
             services.AddTransient<IAuthorizationHandler, PermissionHandler>();
+            services.AddTransient<IAccessTokenGenerator, AccessTokenGenerator>();
         }
     }
 }
