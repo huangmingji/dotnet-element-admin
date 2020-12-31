@@ -1,5 +1,5 @@
 <template>
-  <el-container class="is-vertical">
+  <el-container direction="vertical">
     <app-header :is-collapse="isCollapse" :collapse-handle="collapseHandle" />
     <el-container>
       <sidebar :is-collapse="isCollapse" />
@@ -92,8 +92,4 @@ export default {
   line-height: 320px;
 }
 
-.main {
-  padding: 30px;
-  width: 100%;
-}
 </style>
