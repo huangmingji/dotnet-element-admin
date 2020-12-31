@@ -16,3 +16,18 @@ dotnet new -u DotnetElementAdmin
 # Create an empty vue project
 dotnet new element-admin -o <project name>
 ```
+
+### Run Project
+```bash
+dotnet run
+```
+
+### If you developing, need build vue view 
+```bash
+npm run build
+```
+
+### Publish The Project
+```bash
+dotnet publish -c Release -o out
+```
