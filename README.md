@@ -29,5 +29,5 @@ npm run build
 
 ### Publish The Project
 ```bash
-dotnet publish -c Release -o out
+dotnet publish -c Release -p:PublishTrimmed=true -p:PublishSingleFile=true --self-contained true -r linux-x64 -o out
 ```
