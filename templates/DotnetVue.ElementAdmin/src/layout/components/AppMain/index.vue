@@ -7,13 +7,16 @@
 <script>
 export default {
   name: 'AppMain',
+  props: {
+    height: {
+      type: String,
+      default: 'auto'
+    }
+  },
   computed: {
     styleObject () {
-      const height = window.innerHeight - 60
       return {
-        'overflow-y': 'scroll',
-        height: height + 'px',
-        width: 'auto'
+        height: this.height
       }
     },
     key () {

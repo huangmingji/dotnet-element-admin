@@ -24,6 +24,10 @@ export default {
     isCollapse: {
       type: Boolean,
       default: false
+    },
+    height: {
+      type: String,
+      default: 'auto'
     }
   },
   components: {
@@ -36,11 +40,8 @@ export default {
   },
   computed: {
     styleObject () {
-      const height = window.innerHeight - 60
       return {
-        'overflow-y': 'scroll',
-        height: height + 'px',
-        width: 'auto'
+        height: this.height
       }
     },
     activeMenu () {

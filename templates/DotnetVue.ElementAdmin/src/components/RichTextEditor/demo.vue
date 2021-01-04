@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-breadcrumb separator-class="el-icon-arrow-right">
-      <el-breadcrumb-item :to="{ path: '/dashboard' }">首页</el-breadcrumb-item>
+      <el-breadcrumb-item :to="{ path: '/dashboard' }">Dashboard</el-breadcrumb-item>
       <el-breadcrumb-item>demo</el-breadcrumb-item>
       <el-breadcrumb-item>富文本编辑器</el-breadcrumb-item>
     </el-breadcrumb>
