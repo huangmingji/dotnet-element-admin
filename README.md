@@ -22,7 +22,7 @@ dotnet new element-admin -o <project name>
 dotnet run
 ```
 
-### If you developing, need build vue view 
+### If developing, you need build vue view 
 ```bash
 npm run build
 ```
