@@ -39,7 +39,7 @@ export const asyncRoutes = [
 ]
 
 const createRouter = () => new Router({
-  mode: 'hash',
+  mode: 'history', // hash/history
   scrollBehavior: () => ({ y: 0 }),
   routes: constantRoutes
 })

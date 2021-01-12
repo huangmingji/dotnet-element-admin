@@ -27,7 +27,7 @@ export default {
   },
   data () {
     return {
-      action: 'api/file-upload'
+      action: '/api/file-upload'
     }
   }
 }

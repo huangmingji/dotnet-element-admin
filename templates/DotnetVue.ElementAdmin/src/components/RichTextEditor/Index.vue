@@ -50,7 +50,7 @@ export default {
   mounted () {
     this.editor = new Editor(this.$refs.editor)
     this.editor.config.menus = this.defaultMenus
-    this.editor.config.uploadImgServer = 'api/rich-text-editor/upload' // 上传图片到服务器
+    this.editor.config.uploadImgServer = '/api/rich-text-editor/upload' // 上传图片到服务器
     this.editor.config.height = this.height
     this.editor.config.showLinkImg = false
     this.editor.config.pasteIgnoreImg = true

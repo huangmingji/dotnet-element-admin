@@ -22,7 +22,7 @@
     </PropertyGroup>
   
     <ItemGroup>
-      <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**;templates\**\logs\**;templates\**\files\**;templates\**\node_modules\**;templates\**\wwwroot\**" />
+      <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**;templates\**\logs\**;templates\**\files\**;templates\**\node_modules\**;templates\**\wwwroot\**;templates\**\.idea\**;templates\**\out\**;" />
       <Compile Remove="**\*" />
     </ItemGroup>
   
