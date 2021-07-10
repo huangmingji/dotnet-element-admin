@@ -5,7 +5,7 @@
 ## Usage
 ### Install Template
 ```bash
-dotnet new -i DotnetElementAdmin::1.0.2
+dotnet new -i DotnetElementAdmin::1.0.3
 ```
 
 ### Uninstall Template
