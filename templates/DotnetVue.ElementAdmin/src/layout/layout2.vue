@@ -109,4 +109,10 @@ export default {
       border-right: 1px solid #e6e6e6;
       background-color: #f9fafc;
   }
+  .account-center-top__avatar .el-row {
+    margin-bottom: 10px;
+  }
+  .account-center-top__avatar .el-row:last-child {
+    margin-bottom: 0;
+  }
 </style>

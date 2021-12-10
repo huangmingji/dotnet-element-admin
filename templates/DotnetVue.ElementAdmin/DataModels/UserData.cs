@@ -13,7 +13,7 @@ namespace DotnetVue.ElementAdmin.DataModels
             Name = "washon";
             Account = "admin";
             Password = "password";
-            HeadIcon = "static/img/portrait.jpg";
+            HeadIcon = "/static/img/portrait.jpg";
             Permissions = new List<string>() { "admin" };
         }
 

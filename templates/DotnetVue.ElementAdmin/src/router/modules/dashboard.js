@@ -1,4 +1,4 @@
-import Layout from '../../layout'
+import Layout from '../../layout/layout2'
 
 const dashboardRouter = {
   path: '/dashboard',

@@ -1,4 +1,4 @@
-import Layout from '../../layout/index'
+import Layout from '../../layout/layout2'
 
 const demoRouter = {
   path: '/demo',

@@ -6,7 +6,7 @@ const state = {
   token: getToken(),
   userId: '0',
   name: 'washon',
-  avatar: 'static/img/portrait.jpg',
+  avatar: '/static/img/portrait.jpg',
   permissions: []
 }
 
